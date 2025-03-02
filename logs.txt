@@ -1,0 +1,14 @@
+2025-03-02 15:08:21,145 - WARNING -  * Debugger is active!
+2025-03-02 15:08:21,150 - INFO -  * Debugger PIN: 361-163-776
+2025-03-02 15:08:25,944 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-02 15:08:25,944 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-02 15:08:25,950 - INFO -  * Restarting with stat
+2025-03-02 15:08:26,574 - WARNING -  * Debugger is active!
+2025-03-02 15:08:26,579 - INFO -  * Debugger PIN: 361-163-776
+2025-03-02 15:08:30,947 - INFO - IP: 127.0.0.1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36, Referrer: None, Details: {'ip': '127.0.0.1', 'bogon': True}
+2025-03-02 15:08:30,953 - INFO - 127.0.0.1 - - [02/Mar/2025 15:08:30] "GET / HTTP/1.1" 200 -
+2025-03-02 15:08:31,321 - INFO - IP: 127.0.0.1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36, Referrer: http://127.0.0.1:5000/, Details: {'ip': '127.0.0.1', 'bogon': True}
+2025-03-02 15:08:31,359 - INFO - 127.0.0.1 - - [02/Mar/2025 15:08:31] "[36mGET /image HTTP/1.1[0m" 304 -
+2025-03-02 15:08:31,718 - INFO - IP: 127.0.0.1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36, Referrer: http://127.0.0.1:5000/, Details: {'ip': '127.0.0.1', 'bogon': True}
+2025-03-02 15:08:31,719 - INFO - 127.0.0.1 - - [02/Mar/2025 15:08:31] "[36mGET /image HTTP/1.1[0m" 304 -
