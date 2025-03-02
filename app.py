@@ -11,7 +11,7 @@ def home():
     referrer = request.referrer  # Get referrer (if available)
 
     # Log info to console
-    print(f"IP: {user_ip}, User-Agent: {user_agent}, Referrer: {referrer}, Details: {ip_details}")
+    print(f"IP: {user_ip}, User-Agent: {user_agent}, Referrer: {referrer}")
 
     return render_template('home.html')
 
@@ -25,7 +25,7 @@ def get_image():
     ip_details = get_ip_info(user_ip)
 
     # Log info to console
-    print(f"IP: {user_ip}, User-Agent: {user_agent}, Referrer: {referrer}, Details: {ip_details}")
+    print(f"IP: {user_ip}, User-Agent: {user_agent}, Referrer: {referrer}")
 
 
     return send_from_directory('static', 'japan.jpg')
