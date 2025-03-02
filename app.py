@@ -22,7 +22,7 @@ def home(path=None):
 
     return render_template('home.html')
 
-@app.route('/static/<path:filename>')')
+@app.route('/static/<path:filename>')
 def get_image(filename):
     user_ip = get_client_ip()  # Get the real client IP
     user_agent = request.headers.get('User-Agent')  # Get browser info
