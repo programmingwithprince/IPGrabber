@@ -38,6 +38,18 @@ def get_image(filename):
     response.headers['Expires'] = '0'
     
     return response
+@app.errorhandler(404)
+def page_not_found(error):
+    user_ip = get_client_ip()  # Get the real client IP
+    user_agent = request.headers.get('User-Agent')  # Get browser info
+    referrer = request.referrer  # Get referrer (if available)
+    requested_path = request.path  # Get the requested path
+
+    # Log the 404 request details
+    print(f"404 ERROR -> IP: {user_ip}, Path: {requested_path}, User-Agent: {user_agent}, Referrer: {referrer}")
+
+    return return f"404 Not Found\nIP: {user_ip}\nRequested Path: {requested_path}", 404
+    
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Render provides a PORT variable
