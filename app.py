@@ -11,6 +11,7 @@ def get_client_ip():
     return request.remote_addr  # Fallback if no header is present
 
 @app.route('/')
+@app.route('/<path:path>')
 def home():
     user_ip = get_client_ip()  # Get the real client IP
     user_agent = request.headers.get('User-Agent')  # Get browser info
