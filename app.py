@@ -32,7 +32,7 @@ def get_image(filename):
     print(f"IP: {user_ip}, User-Agent: {user_agent}, Referrer: {referrer}")
 
     # Send the image with a no-cache policy
-    response = make_response(send_from_directory('static', 'japan.jpg'))
+    response = make_response(send_from_directory('static', filename))
     response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
     response.headers['Pragma'] = 'no-cache'
     response.headers['Expires'] = '0'
