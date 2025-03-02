@@ -50,7 +50,7 @@ def page_not_found(error):
     # Log the 404 request details
     print(f"404 ERROR -> IP: {user_ip}, Path: {requested_path}, User-Agent: {user_agent}, Referrer: {referrer}")
 
-    return return f"404 Not Found\nIP: {user_ip}\nRequested Path: {requested_path}", 404
+    return f"404 Not Found\nIP: {user_ip}\nRequested Path: {requested_path}", 404
     
 
 if __name__ == '__main__':
