@@ -33,6 +33,8 @@ def get_image(filename):
 
     # Send the image with a no-cache policy
     response = make_response(send_from_directory('static', filename))
+    response.headers['Content-Type'] = 'image/jpeg'  # Set correct MIME type
+    response.headers['Cache-Control'] = 'public, max-age=86400'  # Allow caching
     response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
     response.headers['Pragma'] = 'no-cache'
     response.headers['Expires'] = '0'
